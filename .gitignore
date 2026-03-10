@@ -105,3 +105,6 @@ Thumbs.db
 *.bak
 *.tmp
 *.temp
+
+# SQLite test databases
+*.db

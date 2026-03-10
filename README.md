@@ -18,7 +18,7 @@ A comprehensive, production-ready full-stack platform for aggregating, analyzing
 | Layer | Technology |
 |---|---|
 | **Backend** | Python 3.11+ / FastAPI |
-| **Frontend** | React 18 / Next.js 14 / TypeScript / Tailwind CSS |
+| **Frontend** | React 18 / Next.js 15 / TypeScript / Tailwind CSS |
 | **Database** | PostgreSQL 16 (primary), Elasticsearch 8 (search) |
 | **Task Queue** | Celery + Redis |
 | **Containerization** | Docker + Docker Compose |
@@ -108,7 +108,7 @@ vuln-intel-platform/
 │   │   └── utils/      # Shared utilities
 │   ├── alembic/        # Database migrations
 │   └── tests/          # Pytest test suite
-├── frontend/           # Next.js 14 frontend
+├── frontend/           # Next.js 15 frontend
 │   └── src/
 │       ├── app/        # Next.js App Router pages
 │       ├── components/ # Reusable React components

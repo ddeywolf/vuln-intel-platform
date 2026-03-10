@@ -4,7 +4,7 @@ import { formatDate, formatScore, formatEpss } from '@/lib/utils';
 import type { Vulnerability } from '@/types/vulnerability';
 
 interface Props {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 async function getVulnerability(cveId: string): Promise<Vulnerability | null> {
@@ -22,7 +22,8 @@ async function getVulnerability(cveId: string): Promise<Vulnerability | null> {
 }
 
 export default async function VulnerabilityDetailPage({ params }: Props) {
-  const vuln = await getVulnerability(params.id);
+  const { id } = await params;
+  const vuln = await getVulnerability(id);
   if (!vuln) notFound();
 
   return (

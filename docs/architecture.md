@@ -7,7 +7,7 @@ The Vulnerability Intelligence Platform follows a modern, microservices-inspired
 ```
 ┌────────────────────────────────────────────────────────────────┐
 │                         User's Browser                         │
-│                   Next.js 14 Frontend (port 3000)              │
+│                   Next.js 15 Frontend (port 3000)              │
 └──────────────────────────┬─────────────────────────────────────┘
                            │ HTTPS / REST
 ┌──────────────────────────▼─────────────────────────────────────┐
@@ -48,7 +48,7 @@ The Vulnerability Intelligence Platform follows a modern, microservices-inspired
 
 ## Component Descriptions
 
-### Frontend (Next.js 14)
+### Frontend (Next.js 15)
 - **App Router** pages for dashboard, vulnerabilities, assets, alerts, and login
 - **Server components** for data-fetching pages (dashboard, vuln detail)
 - **Client components** for interactive pages (vuln list with filters, assets, alerts)

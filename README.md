@@ -39,6 +39,14 @@ cp .env.example .env
 # Edit .env and set SECRET_KEY, NVD_API_KEY, GITHUB_TOKEN
 ```
 
+**Getting your API keys:**
+
+| Variable | Where to get it |
+|---|---|
+| `SECRET_KEY` | Generate any long random string, e.g. `openssl rand -hex 32` |
+| `NVD_API_KEY` | Request free at https://nvd.nist.gov/developers/request-an-api-key |
+| `GITHUB_TOKEN` | Create a **classic Personal Access Token** at https://github.com/settings/tokens/new from **your own GitHub account** — leave all scope checkboxes unchecked (the GitHub Advisory Database is public; no special scopes are needed). The token is only used for authenticated rate-limiting. |
+
 ### 2. Start the platform
 
 ```bash
